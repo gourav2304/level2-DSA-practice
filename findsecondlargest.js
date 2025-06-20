@@ -12,6 +12,8 @@ let secondlargest = "";
 for(let i = 0 ; i<=arr.length ; i++){
     if(arr[i] != arr[0]){
         secondlargest = arr[i]
+        console.log(secondlargest);
+        break;
     }
-    console.log(secondlargest)
+
 }

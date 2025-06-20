@@ -67,10 +67,10 @@
 public class findtwosum {
 
     public static void twosum(int []arr, int target){
-        for(int i=0; i<arr.length; i++){
-            for(int j=0; j<arr.length; j++){
-                if(arr[i]+ arr[j] == target){
-                    System.out.println("print :" + arr[i]+ " " + "+" + arr[j] + "=" + target);
+        for(int i=0; i<arr.length-1; i++){
+            for(int j=0; j<arr.length-1; j++){
+                if(arr[i]* arr[j] == target){
+                    System.out.println("print :" + arr[i]+ " " + "*" + arr[j] + "=" + target);
                     System.out.println("index : " + i +" " +j);
                 
                 }
@@ -80,8 +80,16 @@ public class findtwosum {
     }
     public static void main(String[] args) {
         int[]arr = {1,2,3,4,5};
-        int target = 9;
+        int target = 6;
 
         twosum(arr, target);
     }
 }
+
+
+// k k * * * * *
+// K k *
+// k k *
+// k k * * * *
+// k k *
+// * * *
