@@ -1,6 +1,6 @@
 function factorialOfNumber(n){
     let result = 1;
-    for(let i=1; i<=n; i++){
+    for(let i=2; i<=n; i++){
         result *= i;
 
     }
@@ -8,3 +8,5 @@ function factorialOfNumber(n){
 }
 console.log(factorialOfNumber(5));
  
+
+
